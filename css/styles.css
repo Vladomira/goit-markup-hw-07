@@ -20,7 +20,7 @@
     --overlay-cards-color: rgba(33, 150, 243, 0.9);
 
 }
-
+/* cut */
 
 /* СБРОС */
 .link { 
@@ -46,25 +46,29 @@ img {
 
 /* end СБРОС */
 
+
 body {
     font-family: var(--main-font);
     color: var(--main-color);
     font-weight: 400;
 }
 
-
+/* cut */
 
 /* === header====*/
-.header {
-    border-bottom: 1px solid #ececec;
-}
-
 .container {
     width: var(--container-width);
     margin: 0 auto;
     padding-left: var( --container-padding);
     padding-right: var( --container-padding); 
 }
+/* cut */
+
+
+.header {
+    border-bottom: 1px solid #ececec;
+}
+
 
 .header .container {
     display: flex;
