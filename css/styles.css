@@ -74,17 +74,17 @@ body {
     display: flex;
     align-items: center;
 
-}
+} 
+/* cut */
+
+
 .navigation-for-pages,
 .main-pages,
 .first-adress-text {
     display: flex;
     align-items: center;
 }
-.logo {
-    margin-right: 93px;
-    animation-duration: 3000ms;
-}
+
 
 .list-pages:not(:last-child),
 .for-contacts:not(:last-child) {
@@ -97,6 +97,12 @@ body {
 .main-pages-link.link.current {
     color: var(--accent-color);
  
+}
+/* cut */
+
+.logo {
+    margin-right: 93px;
+    animation-duration: 3000ms;
 }
 .logo {
     font-family: var(--secondary-font);
@@ -123,6 +129,7 @@ body {
 .main-pages-link:focus {
     color: var(--accent-color);
 }
+/* cut */
 
 /*  спецэффекты*/
 .list-pages {
@@ -246,6 +253,7 @@ body {
     margin-left: auto;
     margin-right: auto;    
 }
+/* cut */
 
 .modal-btn,
 .button-list {
@@ -280,6 +288,7 @@ body {
     height: 30px;
     color: var(--white-color);
 }
+/* cut btn */
 /* hero end */
 
 /* skills */
@@ -344,9 +353,11 @@ body {
     fill: currentColor;
 }
 /* end skills */
+/* cut off */
 
 
 /* what we do */
+/* practice-section */
 .we-do {
     padding-bottom: 149px;
 } 
@@ -392,6 +403,8 @@ body {
     color: #fff;    
 }
 /*  */
+/* cut off */
+
 
 /* our-staff */
 
@@ -451,8 +464,9 @@ body {
     letter-spacing: var(--letter-spacing);
     color: var(--paragraph-color);
     margin-bottom: 16px;
-
 }
+/* cut off */
+
  /* icons */
 .social-list {
     display: flex;
@@ -542,6 +556,7 @@ body {
 .clients-icon {
     fill: currentColor;
 }
+/* cut off */
 
 
 /* prtfolio main*/
@@ -625,7 +640,7 @@ body {
      0px 4px 4px rgba(0, 0, 0, 0.06), 
      1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
+/* cut off */
 
       /* overlay */
  .wrapper-projects-card {
@@ -657,7 +672,7 @@ body {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+/* cut off */
 
 /* prtfolio main end*/
 
@@ -811,6 +826,7 @@ input.sign-up-email[placeholder] {
     letter-spacing: 0.06em;
     color: #FFFFFF;
 }
+/* cut off */
 /* ==========footer end=========== */
 
 /* modalbtn-form */
@@ -855,7 +871,7 @@ input.sign-up-email[placeholder] {
 .form-icon {
     position: absolute;
     display: block;
-    left: 12px;modal-
+    left: 12px;
     top: 50%;
     transform: translateY(-50%);
     width: 18px;

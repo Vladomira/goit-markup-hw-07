@@ -1,0 +1,49 @@
+.skills {
+    display: flex;
+    align-items: center;
+    padding-top: var(--padding-of-section);
+    padding-bottom: var(--padding-of-section);
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    margin-left: calc(-1*var(--margin-in-section));
+    margin-top: calc(-1*var(--margin-in-section));
+}
+
+.block-description {
+    margin-left: var(--margin-in-section);
+    margin-top: var(--margin-in-section);
+    height: 251px;
+    width: 270px;
+}
+
+.skills-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--backround-btn);
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.title-description {    
+    font-weight: var(--font-weight-variable);
+    font-size: var(--font-size-predominate);
+    line-height: 1.14;
+    letter-spacing: var(--letter-spacing);    
+    text-transform: uppercase;  
+    margin-bottom: 10px;
+}
+.text-description {
+    font-size: var(--font-size-predominate);
+    line-height: 1.7;
+    letter-spacing: var(--letter-spacing);
+    color: var(--paragraph-color);
+}
+.skills-icons {
+    fill: currentColor;
+}

@@ -1,0 +1,58 @@
+.our-staff {
+    background: var(--backround-btn);
+    padding-top: var(--padding-of-section);
+    padding-bottom: var(--padding-of-section);
+}
+
+.description-command {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1*var(--margin-in-section));
+    margin-bottom: calc(-1*var(--margin-in-section));
+}
+.description-command >.list-command {
+    width: 270px;
+    height: 430px;
+    margin-left: var(--margin-in-section);
+    margin-bottom: var(--margin-in-section);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px
+}
+
+.work-make,     
+.work-command {
+    font-weight: var(--font-weight-variable);
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: var(--letter-spacing);
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;            
+}
+.description-command .names{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: var(--letter-spacing);   
+}
+.block-of-names {
+    padding-top: var(--margin-in-section);
+    padding-bottom: var(--margin-in-section);
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+
+}
+.names {
+    margin-bottom: 10px;
+}
+.description-command .gig {
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: var(--letter-spacing);
+    color: var(--paragraph-color);
+    margin-bottom: 16px;
+
+}

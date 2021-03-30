@@ -2,3 +2,22 @@
  @import './base/common';
  @import './utils/visually-hidden';
  @import './base/container';
+
+ @import './components/modal-btn';
+ @import './layout/header';
+ @import './components/logo';
+ @import './components/contacts';
+
+ @import './layout/hero';
+ @import './layout/skills';
+ @import './layout/we-do';
+ @import './layout/our-staff';
+
+ @import './components/social-links';
+
+ @import './layout/clients';
+ @import './layout/footer';
+
+ @import './components/subscription-form';
+ @import './components/modal-form';
+ @import './components/backdrop';
