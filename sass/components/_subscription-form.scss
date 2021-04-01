@@ -10,9 +10,8 @@
 }
 
 .sign-up {
-    display: flex;
+    @extend %flex;
     flex-direction: row;
-    align-items: center;
     margin-right: auto;
 
     &__email {
@@ -40,8 +39,7 @@
         letter-spacing: var(--letter-spacing);
     }
     &__btn {
-        display: flex;
-        align-items: center;
+        @extend %flex;
         width: 200px;
         height: 50px;
         padding: 10px 28px;
