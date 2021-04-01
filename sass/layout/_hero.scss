@@ -1,9 +1,11 @@
 .hero {
+    & {
     background-color: var(--section-background);   
     padding-bottom: 200px;
-    padding-top: 200px; 
-}
-.banner {
+    padding-top: 200px;
+    } 
+
+    &--banner {
     display: flex;
     background-color: var(--section-background);
     max-width: 1600px;
@@ -12,9 +14,9 @@
     background-repeat: no-repeat;
     background-position: center ;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img.jpg);
-}
+    }
 
-.headline {  
+    &__headline {  
     font-family: var(--main-font);
     font-weight: 900;
     font-size: 44px;
@@ -26,4 +28,5 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;    
+    }
 }

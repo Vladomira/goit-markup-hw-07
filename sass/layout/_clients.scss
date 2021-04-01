@@ -1,36 +1,27 @@
 .clients {
     padding-bottom: var(--padding-of-section);
     padding-top: 94px;
-}
-.clients-title {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-    text-align: center;  
-    font-weight: var(--font-weight-variable);  
-    font-size: 36px;
+    
+    &__title {    
     line-height: 1.16;
-    letter-spacing: var(--letter-spacing);
+    }
 }
 .clients-list {
-    display: flex;
+    @extend %flex;
     flex-wrap: wrap;
-    align-items: center;
     margin-left: calc(-1*var(--margin-in-section));
-}
 
-.clients-item {
-    display: flex;
-    align-items: center;
+    &__item {
+    @extend %flex;
     justify-content: center;
     width: 170px;
     height: 90px;
     border: 1px solid #AFB1B8; 
     border-radius: 4px;
     margin-left: var(--margin-in-section);
-}
-.clients-link {
+    }
+
+    &__link {
     color: var(--social-links-color);
     display: flex;
     align-items: center;
@@ -39,17 +30,20 @@
     height: 100%;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &__icon{
+        fill: currentColor;
+    }
 }
 
-.clients-link:hover,
-.clients-link:focus  {
-    color: var(--accent-color);
+.clients-list {
+    &__link:hover,
+    &__link:focus {
+        color: var(--accent-color);
+    }
+    &__item:hover,
+    &__item:focus {
+        border: 1px solid var(--accent-color);
+    }
 }
 
-.clients-item:focus,
-.clients-item:hover {
-    border: 1px solid var(--accent-color);
-}
-.clients-icon {
-    fill: currentColor;
-}

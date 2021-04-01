@@ -73,10 +73,6 @@ body {
   padding-right: var(--container-padding);
 }
 
-.header {
-  border-bottom: 1px solid #ececec;
-}
-
 .header .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,9 +82,13 @@ body {
           align-items: center;
 }
 
-.navigation-for-pages,
-.main-pages,
-.first-adress-text {
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.navigation,
+.navigation__main-pages,
+.first-adress {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,20 +97,28 @@ body {
           align-items: center;
 }
 
-.list-pages:not(:last-child),
-.for-contacts:not(:last-child) {
+.navigation__list-pages:not(:last-child),
+.first-adress__for-contacts:not(:last-child) {
   margin-right: 50px;
 }
 
-.first-adress-text {
+.first-adress {
   margin-left: auto;
 }
 
-.main-pages-link.link.current {
-  color: var(--accent-color);
+.first-adress__for-contacts:not(:last-child) {
+  margin-right: 50px;
 }
 
-.main-pages-link {
+.navigation__list-pages {
+  position: relative;
+}
+
+.navigation__list-pages:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation__main-pages-link {
   font-weight: 500;
   font-size: var(--font-size-predominate);
   line-height: 1.14;
@@ -122,16 +130,15 @@ body {
   transition: color transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.main-pages-link:hover,
-.main-pages-link:focus {
+.navigation__main-pages-link:hover, .navigation__main-pages-link:focus {
   color: var(--accent-color);
 }
 
-.list-pages {
-  position: relative;
+.navigation__main-pages-link--current {
+  color: var(--accent-color);
 }
 
-.current::after {
+.navigation__main-pages-link--current::after, .navigation__main-pages-link--decoration::after {
   content: "";
   display: block;
   position: absolute;
@@ -143,16 +150,7 @@ body {
   background-color: var(--accent-color);
 }
 
-.decoration-changes::after {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 4px;
-  width: 100%;
-  border-radius: 2px;
-  left: 0px;
-  bottom: 0px;
-  background-color: var(--accent-color);
+.navigation__main-pages-link--decoration::after {
   opacity: 0;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
@@ -162,7 +160,7 @@ body {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 100ms, -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;
 }
 
-.decoration-changes:hover::after {
+.navigation__main-pages-link--decoration:hover::after {
   opacity: 1;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
@@ -172,9 +170,6 @@ body {
   margin-right: 93px;
   -webkit-animation-duration: 3000ms;
           animation-duration: 3000ms;
-}
-
-.logo {
   font-family: var(--secondary-font);
   font-weight: var(--font-weight-variable);
   font-size: 26px;
@@ -183,11 +178,11 @@ body {
   color: var(--accent-color);
 }
 
-.change-first {
+.logo--change-first {
   color: #000;
 }
 
-.phone {
+.first-address__phone {
   padding-top: 7px;
   padding-bottom: 7px;
   font-weight: 500;
@@ -201,19 +196,11 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;
 }
 
-.for-contacts:hover .phone,
-.for-contacts:focus .phone {
-  -webkit-animation-name: heartBeat;
-          animation-name: heartBeat;
-  -webkit-animation-duration: 2000ms;
-          animation-duration: 2000ms;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+.first-address__phone:hover, .first-address__phone:focus {
+  color: var(--accent-color);
 }
 
-/* icon */
-.email,
-.tell {
+.first-address__phone--email, .first-address__phone--tell {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,23 +209,27 @@ body {
           align-items: center;
 }
 
-.phone:hover,
-.phone:focus {
-  color: var(--accent-color);
+.first-adress__for-contacts:hover .first-adress__phone,
+.first-adress__for-contacts:focus .first-adress__phone {
+  -webkit-animation-name: heartBeat;
+          animation-name: heartBeat;
+  -webkit-animation-duration: 2000ms;
+          animation-duration: 2000ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 
-.icon-contacts-letter,
-.icon-contacts-smartphone {
+.first-adress__icon-contacts-letter, .first-adress__icon-contacts-smartphone {
   fill: currentColor;
 }
 
-.icon-contacts-letter {
+.first-adress__icon-contacts-letter {
   height: 12px;
   width: 16px;
   margin-right: 10px;
 }
 
-.icon-contacts-smartphone {
+.first-adress__icon-contacts-smartphone {
   height: 16px;
   width: 10px;
   margin-right: 10px;

@@ -1,4 +1,5 @@
-.phone {
+.first-address {
+    &__phone{
     padding-top: 7px;
     padding-bottom: 7px;
     font-weight: 500;
@@ -9,40 +10,72 @@
     padding-top: 32px;
     padding-bottom: 32px;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 100ms; 
+    }
+    &__phone:hover,
+    &__phone:focus {
+        color: var(--accent-color);
+    }   
+    &__phone--email,
+    &__phone--tell {
+        @extend %flex;
+    }
+}
+.first-address__phone {
+    .first-address__for-contacts:hover &,
+    .first-address__for-contacts:focus &{
+        animation-name: heartBeat;
+        animation-duration: 2000ms;
+        animation-timing-function: linear;
+    }
 }
 
-.for-contacts:hover .phone,
-.for-contacts:focus .phone{
-    animation-name: heartBeat;
-    animation-duration: 2000ms;
-    animation-timing-function: linear;
-}
 
-/* icon */
-.email,
-.tell {
-    display: flex;
-    align-items: center; 
-}
-.phone:hover,
-.phone:focus {
-    color: var(--accent-color);
-} 
-
-.icon-contacts-letter,
-.icon-contacts-smartphone{  
+.first-address {
+    &__icon-contacts-letter,
+    &__icon-contacts-smartphone{  
     fill: currentColor;
-}
-
-.icon-contacts-letter {
+    }
+    
+    &__icon-contacts-letter {
     height: 12px;
     width: 16px;
     margin-right: 10px;
-}
+    }
 
-.icon-contacts-smartphone {
+    &__icon-contacts-smartphone {
     height: 16px;
     width: 10px;
     margin-right: 10px;
+    }
+}
+
+
+// footer
+.address {
+    &__location-link,
+    &__contact-link {
+    font-size: var(--font-size-predominate);
+    line-height: 1.7;
+    letter-spacing: var(--letter-spacing);
+    display: block;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    } 
+    &__location-link   { 
+        color: var(--white-color);
+    }
+    &__contact-link {
+    color: rgba(255, 255, 255, 0.6);
+    } 
+    &__contacts:not(:last-child) {
+        margin-bottom: 9px;
+    }
+    &__location-link:hover,
+    &__location-link:focus,
+    &__contact-link:hover,
+    &__contact-link:focus{
+    color: var(--accent-color);
+    }
+    
 }
