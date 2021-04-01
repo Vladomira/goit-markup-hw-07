@@ -1,6 +1,5 @@
 
 .logo {
-    & {
     margin-right: 93px;
     animation-duration: 3000ms;
     
@@ -10,7 +9,7 @@
     line-height: 1.19;
     letter-spacing: var(--letter-spacing);
     color: var(--accent-color);
-  }
+  
     &--change-first {
     color: #000;
     }

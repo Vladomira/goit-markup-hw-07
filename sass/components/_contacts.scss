@@ -1,4 +1,6 @@
 .first-address {
+    @extend %flex;
+
     &__phone{
     padding-top: 7px;
     padding-bottom: 7px;
@@ -20,6 +22,7 @@
     &__phone--tell {
         @extend %flex;
     }
+    
 }
 .first-address__phone {
     .first-address__for-contacts:hover &,
@@ -29,9 +32,15 @@
         animation-timing-function: linear;
     }
 }
-
+.first-address {
+       &__for-contacts:not(:last-child) {
+        margin-right: 50px;
+    }
+}
 
 .first-address {
+    margin-left: auto;
+
     &__icon-contacts-letter,
     &__icon-contacts-smartphone{  
     fill: currentColor;

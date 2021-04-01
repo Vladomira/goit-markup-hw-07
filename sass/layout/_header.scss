@@ -2,8 +2,7 @@
     border-bottom: 1px solid #ececec;
 
 }
-  
-
+   
 .navigation,
 .navigation__main-pages,
 .first-address {
@@ -16,13 +15,6 @@
     margin-right: 50px;
 }
 
-.first-address {
-    margin-left: auto;
-
-    &__for-contacts:not(:last-child) {
-        margin-right: 50px;
-    }
-}
 
 .navigation {
     &__list-pages {

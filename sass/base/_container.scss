@@ -1,12 +1,13 @@
 .container {
     width: var(--container-width);
     margin: 0 auto;
-    padding-left: var( --container-padding);
-    padding-right: var( --container-padding); 
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding); 
 
     .header & {
         @extend %flex;
         }
+        
     & .filters-btn {
             @extend %flex;
             flex-wrap: wrap;

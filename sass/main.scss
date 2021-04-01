@@ -3,14 +3,16 @@
  @import './utils/visually-hidden';
  @import './base/container';
  
-@import './components/directives';
- @import './components/modal-btn';
- @import './layout/header';
+ @import './components/directives';
+
  @import './components/logo';
+ @import './layout/header';
+
  @import './components/contacts';
-// 
+ @import './components/modal-btn';
+
  @import './layout/hero';
- @import './components/_title-of-section';
+ @import './components/title-of-section';
  @import './layout/skills';
  @import './layout/we-do';
  @import './layout/our-staff';
