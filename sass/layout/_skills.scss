@@ -19,7 +19,7 @@
     }
 
     &__skills-block {
-    @extend %felx;
+    @extend %flex;
     justify-content: center;
     background-color: var(--backround-btn);
     width: 270px;

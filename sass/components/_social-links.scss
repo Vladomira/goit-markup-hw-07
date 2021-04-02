@@ -1,10 +1,12 @@
 .social-list {
-    @extend %flex;
+    display: flex;
+    align-items: center;
     justify-content: center;
     justify-content: space-around;
  }
 .social-link{
-    @extend %flex;
+    display: flex;
+    align-items: center;
     justify-content: center;
     color: var(--social-links-color);
     width: 44px;
@@ -29,7 +31,8 @@
 // footer
 .social-list {
     &--margin {
-    @extend %flex;
+    display: flex;
+    align-items: center;
     margin-bottom: -10px;
     margin-left: -10px;     
     }

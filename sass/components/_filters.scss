@@ -6,7 +6,12 @@
  .filters-btn__item:not(:last-child) {
      margin-right: 8px;    
  }
-  
+.filters-btn {
+    @extend %flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    justify-content: center;
+}
  .filters-btn__button {
      font-weight: 500;
      font-size: 16px;
@@ -21,8 +26,8 @@
      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
  
-    &__button:hover,
-    &__button:focus {
+    &:hover,
+    &:focus {
      color: var(--white-color);
      background-color: var(--accent-color);
      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 

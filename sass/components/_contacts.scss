@@ -22,6 +22,7 @@
     &__phone--tell {
         @extend %flex;
     }
+
     
 }
 .first-address__phone {
@@ -32,14 +33,14 @@
         animation-timing-function: linear;
     }
 }
-.first-address {
-       &__for-contacts:not(:last-child) {
-        margin-right: 50px;
-    }
-}
+
 
 .first-address {
     margin-left: auto;
+
+    &__for-contacts:not(:last-child) {
+        margin-right: 50px;
+    }
 
     &__icon-contacts-letter,
     &__icon-contacts-smartphone{  

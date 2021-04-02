@@ -2,8 +2,16 @@
     padding-bottom: var(--padding-of-section);
     padding-top: 94px;
     
-    &__title {    
-    line-height: 1.16;
+    &__title { 
+        font-weight: var(--font-weight-variable);
+        font-size: 36px;
+        letter-spacing: var(--letter-spacing);
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;  
+        line-height: 1.16;
     }
 }
 .clients-list {
