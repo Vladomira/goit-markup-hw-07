@@ -1,11 +1,11 @@
 .skills {
-   @extend %felx;
+   @extend %flex;
     padding-top: var(--padding-of-section);
     padding-bottom: var(--padding-of-section);
 }
 
 .description {
-    @extend %felx;
+    @extend %flex;
     margin-left: calc(-1*var(--margin-in-section));
     margin-top: calc(-1*var(--margin-in-section));
 }
