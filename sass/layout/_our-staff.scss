@@ -2,6 +2,12 @@
     background: var(--backround-btn);
     padding-top: var(--padding-of-section);
     padding-bottom: var(--padding-of-section);
+
+    &__container {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
 }
 
 .command {
