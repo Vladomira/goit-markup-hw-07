@@ -131,21 +131,25 @@
     &__confidence-link {
     font-size: 14px;
     line-height: 1.7;
-    letter-spacing: var(--letter-spacing);
     color: var(--accent-color);
+    letter-spacing: var(--letter-spacing);
     text-decoration: underline;
     }
-   
-.chekbox-square:checked + &::before { 
-    background-image: url(../images/checkbox/vector.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: var(--accent-color);
-    border: none;
-    background-position: center;
-    transform: scale(1.2);
-    outline: none;
+
+    &__text {
+        color: var(--accent-color);
     }
+   
+    .chekbox-square:checked + &::before { 
+        background-image: url(../images/checkbox/vector.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: var(--accent-color);
+        border: none;
+        background-position: center;
+        transform: scale(1.2);
+        outline: none;
+        }
 }
 
 .submit-btn {
