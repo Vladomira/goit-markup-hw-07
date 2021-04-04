@@ -940,18 +940,10 @@ body {
   fill: var(--accent-color);
 }
 
-.chekbox-square__confidence_link {
-  font-style: 14px;
-  line-height: 1.7;
-  letter-spacing: var(--letter-spacing);
-  color: var(--accent-color);
-  text-decoration: underline;
-}
-
 .chekbox-square__label::before {
   content: "";
   display: block;
-  background-image: url(../images/checkbox/checkbox.svg);
+  background-image: url(../../images/checkbox/checkbox.svg);
   background-repeat: no-repeat;
   background-size: contain;
   width: 16px;
@@ -982,7 +974,7 @@ body {
   border-color: var(--paragraph-color);
 }
 
-.chekbox-square__link {
+.chekbox-square__confidence-link {
   font-size: 14px;
   line-height: 1.7;
   color: var(--accent-color);
@@ -991,7 +983,7 @@ body {
 }
 
 .chekbox-square:checked + .chekbox-square::before {
-  background-image: url(../images/checkbox/vector.svg);
+  background-image: url(../../images/checkbox/vector.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-color: var(--accent-color);
