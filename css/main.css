@@ -982,7 +982,7 @@ body {
   text-decoration: underline;
 }
 
-.checkbox-square:checked + .checkbox-square::before {
+.checkbox-square:checked + .checkbox-square__label::before {
   background-image: url(../images/checkbox/vector.svg);
   background-repeat: no-repeat;
   background-size: contain;
